@@ -1,0 +1,95 @@
+.music-nav {
+  background-image: url("https://w.namu.la/s/a249630f5c4f00172bf1151089e2595e8b9a94847aecd9b64910d6cf039ade0ccd0b7a00cb796631c77b9490c04ec76faf1ee0d877489566b2b8739abea29015cad84c3ec0d13bf786b50f6d7e2df69711c4686c55b33ba46ea183caf8f5b15d1a2ba2af0f47c0369b135e51b8a2695b");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 10px;
+
+  margin: auto 0;
+  top: 0px;
+  bottom: 0px;
+}
+
+.animation-view__rhythm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+.animation-view__rhythm div {
+  background-color: white;
+  border: 4px solid white;
+  height: 20px;
+  width: 0px;
+  opacity: 0.5;
+
+  transform-origin: bottom;
+}
+
+.animation-view__rhythm.play div:first-child {
+  animation: rhythm_animation 1s ease-in-out infinite;
+}
+.animation-view__rhythm.play div:nth-child(2) {
+  animation: rhythm_animation_2 1s ease-in-out infinite;
+  animation-delay: 0.05s;
+}
+.animation-view__rhythm.play div:nth-child(3) {
+  animation: rhythm_animation 1s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+
+@keyframes rhythm_animation {
+  0% {
+    transform: scale(1, 0.8);
+  }
+  5% {
+    transform: scale(1, 0.9);
+  }
+  10% {
+    transform: scale(1, 0.8);
+  }
+  15% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 0.8);
+  }
+  100% {
+    transform: scale(1, 0.8);
+  }
+}
+
+@keyframes rhythm_animation_2 {
+  0% {
+    transform: scale(1, 0.8);
+  }
+  10% {
+    transform: scale(1, 0.8);
+  }
+  15% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 0.8);
+  }
+  60% {
+    transform: scale(1, 0.8);
+  }
+  65% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 0.8);
+  }
+}

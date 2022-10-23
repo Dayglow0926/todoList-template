@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@import "reset.css";
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+@import "music-nav.css";
+
+.todo {
+  display: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+
+  height: 100vh;
+  width: 100vw;
+  background-image: "../img/background-img2.jpg";
+  background-color: rgba(0, 0, 0, 1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  color: white;
+}
+
+header {
+  height: 10%;
+}
+footer {
+  height: 10%;
+}
+main {
+  height: 70%;
+}

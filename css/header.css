@@ -1,0 +1,105 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+header div {
+  width: 33%;
+}
+
+.header-content__link {
+  display: flex;
+  align-items: flex-end;
+}
+.header-content__link-input {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 2px solid white;
+  margin: 0px 5px;
+  outline: none;
+  color: white;
+}
+
+.header-content__clock {
+  display: flex;
+  justify-content: center;
+}
+
+.header-content__weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.header-content__weather-location {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 13px;
+}
+
+.music-header {
+  position: relative;
+  margin-top: 5px;
+}
+.music-header__play {
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: black;
+  color: white;
+  padding: 12px 12px;
+  border-radius: 10px;
+
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.music-header__play-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.music-header__play-info span {
+  line-height: 1.5;
+}
+
+.music-header__play-info span:first-child {
+  font-size: 0.5em;
+  opacity: 0.5;
+}
+
+.music-header__play-info span:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.music-header__play-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38%;
+}
+
+.music-header__play-button .hide {
+  display: none !important;
+}
+
+.music-header__play-button i:first-child {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.music-header__play-button i:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.music-header__play-button i:last-child {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@import "reset.css";
+
+.todo {
+  display: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+
+  height: 100vh;
+  width: 100vw;
+  background-image: "../img/background-img2.jpg";
+  background-color: rgba(0, 0, 0, 1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-content__profile {
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 2%;
+}
+
+.main-content__profile i {
+  color: black;
+  font-size: 50px;
+}
+
+.main-content {
+  font-weight: 500;
+  padding: 5px 0px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content__clock {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  margin-bottom: 20px;
+  height: 50%;
+}
+
+.main-content__clock .clock-hhmm {
+  font-size: 110px;
+}
+
+.main-content__clock .clock-ss {
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px 8px;
+}
+
+.main-content__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content__intro-greet {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.main-content__todo input {
+  font-size: 40px;
+  font-weight: 500;
+
+  border: none;
+  border-bottom: 3px solid white;
+  background-color: rgba(0, 0, 0, 0);
+
+  outline: none;
+
+  color: white;
+  text-align: center;
+}
+
+.main-content__intro input {
+  margin-top: 30px;
+  font-size: 40px;
+  font-weight: 500;
+
+  border: none;
+  border-bottom: 3px solid white;
+  background-color: rgba(0, 0, 0, 0);
+
+  outline: none;
+
+  color: white;
+  text-align: center;
+}
+
+.common-clock {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  font-size: 7rem;
+}
+.common-clock div:last-child {
+  font-size: 2rem;
+}
+
+.common-clock .clock-ss {
+  display: none;
+}
