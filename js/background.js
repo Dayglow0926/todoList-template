@@ -14,7 +14,7 @@ const body = document.querySelector("body");
 const foreground = document.querySelector(".foreground");
 
 const randomSelect = 1;
-// Math.floor(Math.random() * backgroundImgList.length);
+Math.floor(Math.random() * backgroundImgList.length);
 const backgroundImg = backgroundImgList[randomSelect];
 
 const background_wrapper = document.createElement("div");
